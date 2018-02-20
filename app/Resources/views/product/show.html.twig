@@ -1,0 +1,31 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+    <h1>Product</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ product.id }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ product.title }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ product.description }}</td>
+            </tr>
+            <tr>
+                <th>Enabled</th>
+                <td>{% if product.enabled %}Yes{% else %}No{% endif %}</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    {{ render(controller('Esprit\BaseBundle:Product:ratingProduct',{'id':product.id})) }}
+    {#{{ render(controller('Esprit\\BaseBundle\\Controller\\ProductController:rating', {'id': product.id})) }}#}
+
+{% endblock %}

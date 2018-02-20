@@ -1,0 +1,26 @@
+Esprit\BaseBundle\Entity\Product:
+    type: entity
+    table: null
+    repositoryClass: Esprit\BaseBundle\Repository\ProductRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        description:
+            type: string
+            length: 255
+        enabled:
+            type: boolean
+
+    oneToMany:
+        rates:
+            targetEntity: Rate
+            mappedBy: product
+
+    lifecycleCallbacks: {  }

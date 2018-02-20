@@ -1,0 +1,19 @@
+Esprit\BaseBundle\Entity\Rate:
+    type: entity
+    table: null
+    repositoryClass: Esprit\BaseBundle\Repository\RateRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        rating:
+            type: integer
+
+    manyToOne:
+        product:
+            targetEntity: Product
+            inversedBy: rates
+    lifecycleCallbacks: {  }

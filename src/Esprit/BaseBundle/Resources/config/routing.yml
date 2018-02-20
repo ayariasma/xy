@@ -1,0 +1,7 @@
+esprit_base_product:
+    resource: "@EspritBaseBundle/Resources/config/routing/product.yml"
+    prefix:   /product
+
+esprit_base_homepage:
+    path:     /
+    defaults: { _controller: EspritBaseBundle:Default:index }

@@ -1,0 +1,55 @@
+<?php
+
+namespace Esprit\BaseBundle\Entity;
+
+/**
+ * Rating
+ */
+class Rating
+{
+    /**
+     * @var int
+     */
+    private $id;
+
+
+    /**
+     * @var integer
+     */
+    private $rating;
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set rating
+     *
+     * @param integer $rating
+     *
+     * @return Rating
+     */
+    public function setRating($rating)
+    {
+        $this->rating = $rating;
+
+        return $this;
+    }
+
+    /**
+     * Get rating
+     *
+     * @return integer
+     */
+    public function getRating()
+    {
+        return $this->rating;
+    }
+}

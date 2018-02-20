@@ -1,0 +1,3 @@
+esprit_message_homepage:
+    path:     /
+    defaults: { _controller: EspritMessageBundle:Default:index }
