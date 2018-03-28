@@ -1,5 +1,9 @@
 
 <link rel="stylesheet" type="text/css" href="{{ asset('css/rating.css') }}" />
+<div id="fb-root"></div>
+
+<a href="{{ path("hwi_oauth_service_redirect", {service: "facebook"}) }}" class="btn btn-default"><i class="fa fa-facebook"></i><span>log in with facebook</span></a>
+
 {% block body %}
 
 {% endblock %}

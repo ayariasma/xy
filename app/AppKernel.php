@@ -22,6 +22,8 @@ class AppKernel extends Kernel
             new blackknight467\StarRatingBundle\StarRatingBundle(),
             new Esprit\BaseBundle\EspritBaseBundle(),
             new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
+            new Http\HttplugBundle\HttplugBundle(),
+            new HWI\Bundle\OAuthBundle\HWIOAuthBundle(),
 
         ];
 
